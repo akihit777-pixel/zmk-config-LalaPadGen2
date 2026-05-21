@@ -43,7 +43,15 @@
 #define JP_GREATER_THAN LS(DOT)           // >
 
 / {
-    behaviors {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Cond_Syslayer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+
     moA: moA {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
@@ -243,12 +251,4 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        Cond_Syslayer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
 };
