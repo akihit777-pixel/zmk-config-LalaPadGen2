@@ -149,9 +149,6 @@
         };
     };
 
-
-
-/ {
     behaviors {
         zip_dyn_scale: zip_dyn_scale {
             compatible = "zmk,behavior-zip-dynamic-scale";
