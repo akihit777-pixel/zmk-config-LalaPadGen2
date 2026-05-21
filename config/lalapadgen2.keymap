@@ -198,10 +198,18 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
+            // -----------------------------------------------------------------------------------------
+            // |  Q  |  W  |  E  |  R  |  T  |                     |  Y  |  U  |  I  |  O  |  P  |
+            //      ESC
+            // |  A  |  S  |  D  |  F  |  G  |                     |  H  |  J  |  K  |  L  |  -  |  
+            //      TAB 
+            // |  Z  |  X  |  C  |  V  |  B  |                     |  N  |  M  |  ,  |  .  |  /  |
+            // |CTRL | WIN | ALT |  | sec |SPACE|SHIFT|    | BS | ENT | ter |  | EISU|KANA |LS(LG(S))| 
+
 &kp Q              &kp W      &kp E         &kp R      &kp T                                     &kp Y      &kp U     &kp I           &kp O           &kp P
 &kp A              &kp S      &kp D         &kp F      &kp G                                     &kp H      &kp J     &kp K           &kp L           &moA
 &mt2 LEFT_SHIFT Z  &kp X      &kp C         &kp V      &kp B                                     &kp N      &kp M     &kp COMMA       &kp PERIOD      &kp SLASH
-&kp LCTRL          &kp LWIN   &kp LEFT_ALT  &mo 1      &kp SPACE  &kp LEFT_SHIFT  &kp BACKSPACE  &kp ENTER  &mo 2     &kp JP_EISU     &kp JP_KANA     &kp BACKSLASH
+&kp LCTRL          &kp LWIN   &kp LEFT_ALT  &lt_sec_henkan 1 INT_HENKAN  &kp SPACE  &kp LEFT_SHIFT  &kp BACKSPACE  &kp ENTER  &lt_ter_muhenkan 2 INT_MUHENKAN  &kp JP_EISU     &kp JP_KANA     &kp BACKSLASH
                    &none      &kp RIGHT     &kp DOWN   &kp LEFT   &kp UP          &kp UP         &kp LEFT   &kp DOWN  &kp RIGHT       &none
 &mkp LCLK          &mkp RCLK  &mkp MCLK                                                                               &mkp LCLK       &mkp RCLK       &mkp MCLK
 &mkp MB4           &mkp MB5   &kp LG(TAB)   &kp LG(D)  &kp LCTRL                                 &mkp MB4   &mkp MB5  &kp LG(TAB)     &kp LG(D)       &kp LCTRL
@@ -211,24 +219,37 @@
         SECONDARY_LAYER {
             display-name = "secondary_layer";
             bindings = <
-&kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4  &kp N5                    &kp KP_NUMLOCK    &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS
-&kp NUMBER_6      &kp N7             &kp N8        &kp N9        &kp N0                    &trans            &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
-&kp F6            &kp F7             &kp F8        &kp F9        &kp F10                   &trans            &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ASTERISK
-&trans            &trans             &trans        &trans        &trans   &trans  &kp DEL  &trans            &trans             &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_DIVIDE
-                  &trans             &trans        &trans        &trans   &trans  &trans   &trans            &trans             &trans           &trans
+            // -----------------------------------------------------------------------------------------
+            // |  1  |  2  |  3  |  4  |  5  |          　      |NUMLOCK|  7  |  8  |  9  |  +  |
+            //      ESC
+            // |  6  |  7  |  8  |  9  |  0  |     　　         |   ,   |  4  |  5  |  6  |  -  |
+            //      TAB 
+            // | CAPS|     |半/全|HENKAN|MUHENKAN|     　       |   .   |  1  |  2  |  3  |  /  |
+            // |CTRL | WIN | ALT |  | sec |SPACE|SHIFT|    | del | ENT | ter | |  0  |  =  |  *  | 
+
+&kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3   &kp NUMBER_4    &kp NUMBER_5                  &kp KP_NUMLOCK    &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS
+&kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8   &kp NUMBER_9    &kp NUMBER_0                  &kp COMMA         &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
+&kp CAPS          &kp RALT           &kp JP_HANZEN  &kp INT_HENKAN  &kp INT_MUHENKAN              &kp KP_DOT        &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE
+&kp LS(LG(S))     &kp LC(C)          &kp LC(V)      &trans        &trans   &trans        &kp DEL  &kp RET           &trans             &kp KP_NUMBER_0  &kp JP_EQUAL     &kp KP_ASTERISK
+                  &trans             &trans         &trans        &trans   &trans  &trans   &trans            &trans             &trans           &trans
 &trans            &trans             &trans                                                                                     &trans           &trans           &trans
-&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans        &trans        &trans                    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans           &trans           &trans
+&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans         &trans        &trans                    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans           &trans           &trans
             >;
         };
 
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN    &kp HASH      &kp DOLLAR            &kp PERCENT                            &kp PAGE_UP    &kp HOME  &kp UP_ARROW    &kp END    &kp PRINTSCREEN
-&kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp PAGE_DOWN  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp SCROLLLOCK
-&kp GRAVE        &kp SQT        &kp SEMI      &kp LEFT_BRACKET      &kp RIGHT_BRACKET                      &trans         &mkp MB4  &trans          &mkp MB5   &kp PAUSE_BREAK
-&trans           &trans         &trans        &trans                &trans                 &trans  &trans  &trans         &trans    &trans          &trans     &trans
-                 &trans         &trans        &trans                &trans                 &trans  &trans  &trans         &trans    &trans          &trans
+            // |  !  |  @  |  #  |  $  |  %  |                 |PAGE_UP  |HOME |  ↑  | END | PRSC | 
+            // |  ^  |  &  |  *  |  (  |  )  |                 |PAGE_DOWN|  ←  |  ↓  |  →  | SCLK |
+            // |  `  |  '  |  ;  |  [  |  ]  |                 |  　     |     |     |     | PAUSE_BREAK |
+            // |CTRL | WIN | ALT |  | sec |SPACE|SHIFT|    | BS | ENT | ter |  |     |     |      | 
+
+&kp EXCLAMATION  &kp JP_AT      &kp HASH      &kp DOLLAR            &kp PERCENT                            &kp PAGE_UP    &kp HOME  &kp UP_ARROW    &kp END    &kp PRINTSCREEN
+&kp JP_CARET     &kp JP_AMPERSAND  &kp JP_ASTERISK  &kp JP_LPAREN   &kp JP_RPAREN                          &kp PAGE_DOWN  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp SCROLLLOCK
+&kp JP_BACKQUOTE  &kp JP_QUOTE  &kp SEMI      &kp JP_LBRACKET       &kp JP_RBRACKET                        &trans         &mkp MB4  &trans          &mkp MB5   &kp PAUSE_BREAK
+&trans           &trans         &trans        &trans                &trans         &trans          &trans  &trans         &trans    &trans          &trans     &trans
+                 &trans         &trans        &trans                &trans         &trans          &trans  &trans         &trans    &trans          &trans
 &trans           &trans         &trans                                                                                              &trans          &trans     &trans
 &trans           &trans         &trans        &trans                &trans                                 &trans         &trans    &trans          &trans     &trans
             >;
@@ -237,6 +258,12 @@
         SYSTEM_LAYER {
             display-name = "system_layer";
             bindings = <
+            // |  F1  |  F2  |  F3  |  F4  |  F5  |           | OUT_TOG | BT0      | BT1 |   BT2  | BT3 |
+            // |  F6  |  F7  |  F8  |  F9  |  F0  |           | reset   |bootloader|BTCLR|BTallCLR|     |
+            // |  F11 |  F12 |  F13 | F14  |  F15 |           |         |          |     |        |     |
+            // |      |      |      |   | sec |    |       |    |     | ter |      |     |        |     |
+
+
 &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &out OUT_TOG                   &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &bt BT_SEL 3
 &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &sys_reset                     &bootloader                    &bt BT_CLR                     &bt BT_CLR_ALL                 &trans
 &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &zip_dyn_scale ZDS_ALL ZDS_RST
