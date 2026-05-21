@@ -225,7 +225,7 @@
             // |  6  |  7  |  8  |  9  |  0  |     　　         |   ,   |  4  |  5  |  6  |  -  |
             //      TAB 
             // | CAPS|     |半/全|HENKAN|MUHENKAN|     　       |   .   |  1  |  2  |  3  |  /  |
-            // |CTRL | WIN | ALT |  | sec |SPACE|SHIFT|    | del | ENT | ter | |  0  |  =  |  *  | 
+            // |     |     |     |  | sec |   |     |    | del | ENT | ter | |  0  |  =  |  *  | 
 
 &kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3   &kp NUMBER_4    &kp NUMBER_5                  &kp KP_NUMLOCK    &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS
 &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8   &kp NUMBER_9    &kp NUMBER_0                  &kp COMMA         &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
@@ -243,7 +243,7 @@
             // |  !  |  @  |  #  |  $  |  %  |                 |PAGE_UP  |HOME |  ↑  | END | PRSC | 
             // |  ^  |  &  |  *  |  (  |  )  |                 |PAGE_DOWN|  ←  |  ↓  |  →  | SCLK |
             // |  `  |  '  |  ;  |  [  |  ]  |                 |  　     |     |     |     | PAUSE_BREAK |
-            // |CTRL | WIN | ALT |  | sec |SPACE|SHIFT|    | BS | ENT | ter |  |     |     |      | 
+            // |     |     |     |  | sec |    |    |     |    |     | ter |   |     |     |      | 
 
 &kp EXCLAMATION  &kp JP_AT      &kp HASH      &kp DOLLAR            &kp PERCENT                            &kp PAGE_UP    &kp HOME  &kp UP_ARROW    &kp END    &kp PRINTSCREEN
 &kp JP_CARET     &kp JP_AMPERSAND  &kp JP_ASTERISK  &kp JP_LPAREN   &kp JP_RPAREN                          &kp PAGE_DOWN  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp SCROLLLOCK
