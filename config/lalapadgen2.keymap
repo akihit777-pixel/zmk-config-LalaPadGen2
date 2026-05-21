@@ -42,7 +42,8 @@
 #define JP_LESS_THAN    LS(COMMA)         // <
 #define JP_GREATER_THAN LS(DOT)           // >
 
-
+/ {
+    behaviors {
     moA: moA {
         compatible = "zmk,behavior-mod-morph";
         #binding-cells = <0>;
