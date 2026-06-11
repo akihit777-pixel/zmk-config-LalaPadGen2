@@ -215,14 +215,13 @@
             //      TAB 
             // |  Z  |  X  |  C  |  V  |  B  |                     |  N  |  M  |  ,  |  .  |  /  |
             // |    半/全
-            // |CTRL | WIN | ALT |  | sec |SPACE|SHIFT|    | BS | ENT | ter |  | DEL | 半/全 | ? | 
-            // |    CAPS
-
+            // |CTRL | WIN | ALT |  |SHIFT| sec |SPACE|    | ENT | ter | BS |  | DEL | 半/全 | ? | 
+            // |CAPS                MUHENKAN                      HENKAN
 
 &kp Q              &kp W      &kp E         &kp R      &kp T                                         &kp Y      &kp U     &kp I           &kp O           &kp P
 &kp A              &kp S      &kp D         &kp F      &kp G                                         &kp H      &kp J     &kp K           &kp L           &moA
 &mt2 LEFT_SHIFT Z  &kp X      &kp C         &kp V      &kp B                                         &kp N      &kp M     &kp COMMA       &kp PERIOD      &kp SLASH
-&kp LCTRL          &kp LWIN   &kp LEFT_ALT  &lt_sec_muhenkan 1 INT_MUHENKAN  &kp SPACE  &kp LEFT_SHIFT  &kp BACKSPACE  &kp ENTER  &lt_ter_henkan 2 INT_HENKAN  &kp DEL  &kp JP_HANZEN  &kp JP_QUES
+&kp LCTRL          &kp LWIN   &kp LEFT_ALT  &kp SPACE  &lt_sec_muhenkan 1 INT_MUHENKAN    &kp LEFT_SHIFT  &kp ENTER  &lt_ter_henkan 2 INT_HENKAN  &kp BACKSPACE  &kp DEL  &kp JP_HANZEN  &kp JP_QUES
                    &none      &kp RIGHT     &kp DOWN   &kp LEFT   &kp UP          &kp UP         &kp LEFT   &kp DOWN  &kp RIGHT       &none
 &mkp LCLK          &mkp RCLK  &mkp MCLK                                                                               &mkp LCLK       &mkp RCLK       &mkp MCLK
 &mkp MB4           &mkp MB5   &kp LG(TAB)   &kp LG(D)  &kp LCTRL                                 &mkp MB4   &mkp MB5  &kp LG(TAB)     &kp LG(D)       &kp LCTRL
@@ -241,7 +240,7 @@
 &kp EXCLAMATION  &kp JP_AT      &kp HASH      &kp DOLLAR            &kp PERCENT                            &kp PAGE_UP    &kp HOME           &kp UP_ARROW      &kp END              &kp PRINTSCREEN
 &kp JP_CARET     &kp JP_AMPERSAND  &kp JP_ASTERISK  &kp JP_LPAREN   &kp JP_RPAREN                          &kp PAGE_DOWN  &kp LEFT           &kp DOWN_ARROW    &kp RIGHT            &kp SCROLLLOCK
 &kp JP_BACKQUOTE  &kp JP_QUOTE  &kp SEMI      &kp JP_LBRACKET       &kp JP_RBRACKET                        &kp MINUS      &kp JP_UNDERSCORE  &kp JP_LESS_THAN  &kp JP_GREATER_THAN  &kp PAUSE_BREAK
-&kp LS(LG(S))  &kp LC(C)  &kp LC(V)        &trans   &kp SPACE   &kp LEFT_SHIFT                   &trans  &trans      &trans         &trans          &trans     &trans
+&kp LS(LG(S))  &kp LC(C)  &kp LC(V)         &kp LEFT_SHIFT &trans   &kp SPACE                    &trans    &trans         &trans    &trans          &trans     &trans
                  &trans         &trans        &trans                &trans         &trans          &trans  &trans         &trans    &trans          &trans
 &trans           &trans         &trans                                                                                              &trans          &trans     &trans
 &trans           &trans         &trans        &trans                &trans                                 &trans         &trans    &trans          &trans     &trans
@@ -255,12 +254,12 @@
             // |  1  |  2  |  3  |  4  |  5  |          　         |NUMLOCK|  7  |  8  |  9  |  +  |
             // |  6  |  7  |  8  |  9  |  0  |     　　            |   ,   |  4  |  5  |  6  |  -  |
             // |  |　|  ¥  |  :  |  ~  |  _  |     　              |   .   |  1  |  2  |  3  |  /  |
-            // |GCOPY| CC  | CV  |    | sec |SPACE|SHIFT| 　 | del | ENT | ter |  |  0  |  =  |  *  | 
+            // |GCOPY| CC  | CV  |    |SHIFT| sec |SPACE|   | ENT | ter | del |  |  0  |  =  |  *  | 
 
-&kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3   &kp NUMBER_4   &kp NUMBER_5                        &kp KP_NUMLOCK    &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS
-&kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8   &kp NUMBER_9   &kp NUMBER_0                        &kp COMMA         &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
-&kp JP_PIPE       &kp JP_YEN         &kp JP_COLON   &kp JP_TILDE   &kp JP_UNDERSCORE                   &kp KP_DOT        &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE
-&kp LS(LG(S))     &kp LC(C)          &kp LC(V)          &trans    &kp SPACE   &kp LEFT_SHIFT     &kp DEL  &kp RET          &trans             &kp KP_NUMBER_0  &kp JP_EQUAL     &kp KP_ASTERISK
+&kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3   &kp NUMBER_4   &kp NUMBER_5                        &kp KP_NUMLOCK    &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS
+&kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9   &kp NUMBER_0                        &kp COMMA         &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
+&kp JP_PIPE    &kp JP_YEN     &kp JP_COLON   &kp JP_TILDE   &kp JP_UNDERSCORE                   &kp KP_DOT        &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE
+&kp LS(LG(S))   &kp LC(C)     &kp LC(V)         &kp LEFT_SHIFT &trans    &kp SPACE         &kp RET       &trans    &kp DEL           &kp KP_NUMBER_0  &kp JP_EQUAL     &kp KP_ASTERISK
                  &trans         &trans        &trans                &trans         &trans          &trans  &trans         &trans    &trans          &trans
 &trans           &trans         &trans                                                                                              &trans          &trans     &trans
 &trans           &trans         &trans        &trans                &trans                                 &trans         &trans    &trans          &trans     &trans
@@ -273,6 +272,7 @@
             // |  F1  |  F2  |  F3  |  F4  |  F5  |              |OUT_TOG|   BT0    |  BT1  |   BT2  |  BT3  |
             // |  F6  |  F7  |  F8  |  F9  |  F0  |              |reset  |bootloader|BTCLR  |BTallCLR|       |
             // |  F11 |  F12 |  F13 | F14  |  F15 |              | CARSP |  CARSDW  | SCLSU | SCLSDW | SPREST|
+            // |     |     |     |   |   | sec |   |        |    | ter |    |    |     |     |     | 
 
 &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &out OUT_TOG                   &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &bt BT_SEL 3
 &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &sys_reset                     &bootloader                    &bt BT_CLR                     &bt BT_CLR_ALL                 &trans
