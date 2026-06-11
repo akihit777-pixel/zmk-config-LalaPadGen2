@@ -235,12 +235,12 @@
             // |  !  |  @  |  #  |  $  |  %  |                    |PAGE_UP  |HOME |  ↑  | END | PRSC | 
             // |  ^  |  &  |  *  |  (  |  )  |                    |PAGE_DOWN|  ←  |  ↓  |  →  | SCLK |
             // |  `  |  '  |  ;  |  [  |  ]  |                    |  　-    |  _  |  <  |  >  |PAUSE_BREAK|
-            // |GCOPY| CC  | CV |  | sec |SPACE|SHIFT|     |    |    | ter |      |     |     |      | 
+            // |GCOPY| CC  | CV |  |SHIFT| sec |SPACE|     | ENT | ter | del |      |     |     |      | 
 
 &kp EXCLAMATION  &kp JP_AT      &kp HASH      &kp DOLLAR            &kp PERCENT                            &kp PAGE_UP    &kp HOME           &kp UP_ARROW      &kp END              &kp PRINTSCREEN
 &kp JP_CARET     &kp JP_AMPERSAND  &kp JP_ASTERISK  &kp JP_LPAREN   &kp JP_RPAREN                          &kp PAGE_DOWN  &kp LEFT           &kp DOWN_ARROW    &kp RIGHT            &kp SCROLLLOCK
 &kp JP_BACKQUOTE  &kp JP_QUOTE  &kp SEMI      &kp JP_LBRACKET       &kp JP_RBRACKET                        &kp MINUS      &kp JP_UNDERSCORE  &kp JP_LESS_THAN  &kp JP_GREATER_THAN  &kp PAUSE_BREAK
-&kp LS(LG(S))  &kp LC(C)  &kp LC(V)         &kp LEFT_SHIFT &trans   &kp SPACE                    &trans    &trans         &trans    &trans          &trans     &trans
+&kp LS(LG(S))  &kp LC(C)  &kp LC(V)         &kp LEFT_SHIFT &trans   &kp SPACE                   &kp RET       &trans    &kp DEL    &trans          &trans     &trans
                  &trans         &trans        &trans                &trans         &trans          &trans  &trans         &trans    &trans          &trans
 &trans           &trans         &trans                                                                                              &trans          &trans     &trans
 &trans           &trans         &trans        &trans                &trans                                 &trans         &trans    &trans          &trans     &trans
